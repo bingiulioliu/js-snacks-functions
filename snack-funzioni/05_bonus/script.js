@@ -6,12 +6,24 @@ e buonasera se è sera (oltre le 17)
 */
 
 const name = 'Mario';
-
+//let hours = now.getHours();
 
 // Dichiara la funzione qui.
+function saluti(nome) {
+    let currentHour = new Date().getHours();
+    if (currentHour <= 13){
+        return console.log(`Buongiorno ${nome}`);
+    } else if (currentHour <=17){
+        return console.log(`Buon pomeriggio ${nome}`);
+    } else
+        return console.log(`Buonasera ${nome}`);
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
+saluti(name);
+
+
 
 
 
