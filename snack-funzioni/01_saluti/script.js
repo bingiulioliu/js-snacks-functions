@@ -1,13 +1,20 @@
+'use strict';
 /* Scrivi una funzione che accetti una stringa contenente un nome e restituisca un saluto seguito dal nome fornito (es. "Ciao [nome]") */
 
 const userName = 'Mario';
 
 
-// Dichiara la funzione qui.
 
+// Dichiara la funzione qui.
+function saluti(nome) {
+    return console.log(`Ciao ${nome}`);
+}
+// Funzione con arrow
+const salutoArrow = nome => console.log(`Saluti ${nome}`);
 
 // Invoca la funzione qui e stampa il risultato in console
+saluti(userName);
 
-
+salutoArrow(userName);
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
